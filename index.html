@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%; 
+            height: 100vh; 
+            background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('lastbggreen.png');
+            background-size: cover; 
+        }
+
+        body {
+            font-family: monospace;
+            background-color: #f0f5f9;
+            color: #333;
+        }
+    
+        .container {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #def4e2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .sidebar:hover {
+            transform: scale(1.05);
+        }
+        .sidebar h2 {
+            color: #2d8659;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #2d8659;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        .sidebar ul li a:hover {
+            color: #1a6c42;
+        }
+        .main-content {
+            width: 75%;
+            margin-left: 20px;
+        }
+        .section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            width: 30%;
+            text-align: center;
+            font-weight: bold;
+            color: #f3f3f3;
+        }
+        .section div {
+            width: 30%;
+            height: 100px;
+            background-color: #ffffff;
+            border: 2px dashed #d9e7ef;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            color: #666;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section div:hover {
+            background-color: #e7f3fb;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .bottom-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bottom-section button,
+        .bottom-section a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 25px;
+            background-color: #41e762;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+        .bottom-section button:hover,
+        .bottom-section a:hover {
+            background-color: #116612;
+            transform: scale(1.05);
+        }
+        .bottom-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fefefe;
+            font-weight: bold;
+        }
+        .bottom-links span {
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        .bottom-links span:hover {
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="sidebar">
+                <h2>Eco-Hub</h2>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="eventsnearyou.html">Events Near You</a></li>
+                    <li><a href="addevent.html">Add an Event</a></li>
+                    <li><a href="groups.html">Find Groups</a></li>
+                    <li><a href="friends.html">Find Friends</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+                <div class="section">
+                    <h3>Popular:</h3>
+                    <h3>Current:</h3>
+                    <h3>Upcoming:</h3>
+                </div>
+                <div class="section">
+                    <div>Event 1</div>
+                    <div>Event 1</div>
+                    <div>Event 1</div>
+                </div>
+                <div class="section">
+                    <div>Event 2</div>
+                    <div>Event 2</div>
+                    <div>Event 2</div>
+                </div>
+                <div class="bottom-section">
+                    <a href="signinpage.html">Log-in / Sign-up</a>
+                    <a href="find.html">Find Here</a>
+                    <a href="supportus.html">Support Us!</a>
+                </div>
+                <div class="bottom-links">
+                    <span>Your Groups</span>
+                    <span>Your Friends</span> 
+                </div>
+                <div class="bottom-links">
+                    <div>-------------</div>
+                    <div>-------------</div>
+            </div>
+            <div class="bottom-links">
+                <div>-------------</div>
+                <div>-------------</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

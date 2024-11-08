@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: monospace;
+      background: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      color: #56ab2f;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .section h2 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+    .section label {
+      display: block;
+      font-weight: bold;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    .section input[type="text"],
+    .section input[type="email"],
+    .section input[type="password"] {
+      width: 100%;
+      padding: 0.8em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .section input[type="checkbox"] {
+      margin-right: 0.5em;
+    }
+    .save-btn {
+      padding: 0.8em 1.5em;
+      background-color: #56ab2f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Settings</h1>
+
+   
+    <div class="section">
+      <h2>Update Profile</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Your username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+
+   
+    <div class="section">
+      <h2>Change Password</h2>
+      <label for="current-password">Current Password:</label>
+      <input type="password" id="current-password" name="current-password" required>
+
+      <label for="new-password">New Password:</label>
+      <input type="password" id="new-password" name="new-password" required>
+
+      <label for="confirm-password">Confirm New Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+    </div>
+
+    
+    <div class="section">
+      <h2>Notification Settings</h2>
+      <label>
+        <input type="checkbox" name="email-notifications" checked>
+        Receive email notifications
+      </label>
+      <label>
+        <input type="checkbox" name="sms-notifications">
+        Receive SMS notifications
+      </label>
+      <label>
+        <input type="checkbox" name="app-notifications" checked>
+        Receive in-app notifications
+      </label>
+    </div>
+
+   
+    <div class="section">
+      <h2>Account Preferences</h2>
+      <label>
+        <input type="checkbox" name="dark-mode">
+        Enable dark mode
+      </label>
+      <label>
+        <input type="checkbox" name="public-profile">
+        Make my profile public
+      </label>
+    </div>
+
+    <button class="save-btn">Save Changes</button>
+  </div>
+</body>
+</html>
